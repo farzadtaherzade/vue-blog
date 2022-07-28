@@ -4,30 +4,30 @@ import Footer from "./components/Footer.vue";
 export default {
   components: {
     Navigation,
-    Footer
+    Footer,
   },
   data() {
     return {
-        
+      navBar: true,
     };
   },
   created() {
-    this.returnRoute()
+    this.returnRoute();
   },
   methods: {
-    returnRoute(){
-      if(this.$route.name === 'register') {
-        this.navBar = false
-        return
+    returnRoute() {
+      if (this.$route.name === "login" || this.$route.name === "register") {
+        this.navBar = false;
+        return;
       }
-        this.navBar = true
-    }
+      this.navBar = true;
+    },
   },
-  watch:{
+  watch: {
     $route() {
-      this.returnRoute()
-    }
-  }
+      this.returnRoute();
+    },
+  },
 };
 </script>
 

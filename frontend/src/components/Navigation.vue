@@ -22,10 +22,10 @@
           <input type="search" id="search" placeholder="Search..." />
         </div>
         <div class="auth">
-          <router-link :to="{ name: 'register' }" class="sign-in" v-if="!mobile"
+          <router-link :to="{ name: 'login' }" class="sign-in" v-if="!mobile"
             >sign in</router-link
           >
-          <router-link :to="{ name: 'register' }" class="sign-up"
+          <router-link :to="{ name: 'login' }" class="sign-up"
             >sign up</router-link
           >
         </div>
@@ -200,17 +200,17 @@ header {
         }
       }
     }
-      .open .menu-btn-burger {
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
-    &::before {
-      transform: rotate(45deg) translate(35px, -35px);
+    .open .menu-btn-burger {
+      transform: translateX(-50px);
+      background: transparent;
+      box-shadow: none;
+      &::before {
+        transform: rotate(45deg) translate(35px, -35px);
+      }
+      &::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+      }
     }
-    &::after {
-      transform: rotate(-45deg) translate(35px, 35px);
-    }
-  }
   }
   .mobile-nav {
     width: 100%;

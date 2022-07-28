@@ -7,6 +7,8 @@
     "preview": "vite preview --port 5050"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^34.2.0",
+    "@ckeditor/ckeditor5-vue": "^4.0.1",
     "axios": "^0.27.2",
     "swiper": "^8.1.4",
     "vue": "^3.2.33",
